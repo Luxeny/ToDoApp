@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Windows.Input;
 using ToDoApp.Commands;
 
 namespace ToDoApp
 {
     public partial class Form1 : Form
     {
-        private readonly Stack<ICommand> _undoStack = new Stack<ICommand>();
-        private readonly Stack<ICommand> _redoStack = new Stack<ICommand>();
+        private readonly Stack<ITaskCommand> _undoStack = new Stack<ITaskCommand>();
+        private readonly Stack<ITaskCommand> _redoStack = new Stack<ITaskCommand>();
 
         public Form1()
         {

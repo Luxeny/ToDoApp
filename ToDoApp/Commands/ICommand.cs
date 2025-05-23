@@ -1,6 +1,6 @@
 ﻿namespace ToDoApp.Commands
 {
-    public interface ICommand
+    public interface ITaskCommand
     {
         void Execute();
         void Undo();

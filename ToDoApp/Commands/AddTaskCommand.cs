@@ -2,7 +2,7 @@
 
 namespace ToDoApp.Commands
 {
-    public class AddTaskCommand : ICommand
+    public class AddTaskCommand : ITaskCommand
     {
         private readonly CheckedListBox _listBox;
         private readonly string _task;
